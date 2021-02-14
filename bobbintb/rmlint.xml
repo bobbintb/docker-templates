@@ -14,7 +14,7 @@
 Default username/password is abc/abc[br][br]</Overview>
   <Category>Tools: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/calibre.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/bobbintb/docker-templates/main/bobbintb/rmlint.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/bobbintb/docker-rmlint-unraid/master/rmlint-icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
@@ -37,12 +37,12 @@ Default username/password is abc/abc[br][br]</Description>
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/server</HostDir>
+      <HostDir></HostDir>
       <ContainerDir>/root</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/Docker/rmlint</HostDir>
+      <HostDir></HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -70,11 +70,11 @@ Default username/password is abc/abc[br][br]</Description>
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="GUI Port" Target="8080" Default="" Mode="tcp" Description="GUI Port - Default 8080" Type="Port" Display="always" Required="false" Mask="false">8322</Config>
-  <Config Name="GUAC_USER" Target="GUAC_USER" Default="" Mode="" Description="Username for the calibre desktop gui." Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="GUAC_PASS" Target="GUAC_PASS" Default="" Mode="" Description="Password md5 hash for the calibre desktop gui." Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Search location" Target="/root" Default="" Mode="rw" Description="Search location /root" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/server</Config>
+  <Config Name="GUI Port" Target="8080" Default="" Mode="tcp" Description="GUI Port - Default 8080" Type="Port" Display="always" Required="true" Mask="false">8322</Config>
+  <Config Name="GUAC_USER" Target="GUAC_USER" Default="" Mode="" Description="Username for the desktop GUI." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="GUAC_PASS" Target="GUAC_PASS" Default="" Mode="" Description="Password MD5 hash for the desktop GUI." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Search location" Target="/root" Default="" Mode="rw" Description="Search location /root" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="PUID" Target="PUID" Default="" Mode="" Description="PUID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="" Mode="" Description="PGID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
-  <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Appdata" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/cache/Docker/rmlint</Config>
+  <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="true" Mask="false"></Config>
 </Container>
