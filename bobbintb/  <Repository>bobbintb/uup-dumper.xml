@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>uup-dumper</Name>
+  <Repository>bobbintb/uup-dumper</Repository>
+  <Registry>https://hub.docker.com/r/bobbintb/uup-dumper/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/bobbintb/uup-dumper/</Support>
+  <Project/>
+  <Overview>https://hub.docker.com/r/bobbintb/uup-dumper/</Overview>
+  <Category/>
+  <WebUI>https://uupdump.net/</WebUI>
+  <TemplateURL/>
+  <Icon>https://static.wikia.nocookie.net/logopedia/images/d/dd/Uupdump.svg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1736985866</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="out" Target="/out" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appda>
+  <TailscaleStateDir/>
+</Container>
