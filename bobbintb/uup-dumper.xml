@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>uup-dumper</Name>
+  <Repository>bobbintb/uup-dumper</Repository>
+  <Registry>https://hub.docker.com/r/bobbintb/uup-dumper/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/bobbintb/uup-dumper/</Support>
+  <Project/>
+  <Overview>https://hub.docker.com/r/bobbintb/uup-dumper/</Overview>
+  <Category/>
+  <WebUI>https://uupdump.net/</WebUI>
+  <TemplateURL/>
+  <Icon>https://static.wikia.nocookie.net/logopedia/images/d/dd/Uupdump.svg</Icon>
+  <ExtraParams/>
+  <PostArgs>sleep infinity</PostArgs>
+  <CPUset/>
+  <DateInstalled>1737012293</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="out" Target="/out" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/uup-dumper</Config>
+  <Config Name="Windows Home" Target="Windows Home" Default="YES" Mode="" Description="Required for Windows Home Single Language" Type="Variable" Display="always-hide" Required="false" Mask="false">YES</Config>
+  <Config Name="Windows Home N" Target="Windows Home N" Default="YES" Mode="" Description="" Type="Variable" Display="always-hide" Required="false" Mask="false">YES</Config>
+  <Config Name="Windows Pro" Target="Windows Pro" Default="YES" Mode="" Description="Required for:&#13;&#10;Windows Pro for Workstations,&#13;&#10;Windows Pro Education,&#13;&#10;Windows Education,&#13;&#10;Windows Enterprise,&#13;&#10;Windows Enterprise multi-session / Virtual Desktops,&#13;&#10;Windows IoT Enterprise,&#13;&#10;Windows IoT Enterprise Subscription" Type="Variable" Display="always-hide" Required="false" Mask="false">YES</Config>
+  <Config Name="Windows Pro N" Target="Windows Pro N" Default="YES" Mode="" Description="Required for: Windows Pro N for Workstations,&#13;&#10;Windows Pro Education N,&#13;&#10;Windows Education N,&#13;&#10;Windows Enterprise N" Type="Variable" Display="always-hide" Required="false" Mask="false">YES</Config>
+  <Config Name="Windows Home Single Language" Target="Windows Home Single Language" Default="NO" Mode="" Description="Requires Windows Home" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
+  <Config Name="Windows Pro for Workstations" Target="Windows Pro for Workstations" Default="NO" Mode="" Description="Requires Windows Pro" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
+  <Config Name="Windows Pro Education" Target="Windows Pro Education" Default="NO" Mode="" Description="Requires Windows Pro" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
+  <Config Name="Windows Education" Target="Windows Education" Default="NO" Mode="" Description="Requires Windows Pro" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
+  <Config Name="Windows Enterprise" Target="Windows Enterprise" Default="NO" Mode="" Description="Requires Windows Pro" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
+  <Config Name="Windows Enterprise multi-session / Virtual Desktops" Target="Windows Enterprise multi-session / Virtual Desktops" Default="NO" Mode="" Description="Requires Windows Pro" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
+  <Config Name="Windows IoT Enterprise" Target="Windows IoT Enterprise" Default="NO" Mode="" Description="Requires Windows Pro" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
+  <Config Name="Windows IoT Enterprise Subscription" Target="Windows IoT Enterprise Subscription" Default="NO" Mode="" Description="Requires Windows Pro" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
+  <Config Name="Windows Pro N for Workstations" Target="Windows Pro N for Workstations" Default="NO" Mode="" Description="Requires Windows Pro N" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
+  <Config Name="Windows Pro Education N" Target="Windows Pro Education N" Default="NO" Mode="" Description="Requires Windows Pro N" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
+  <Config Name="Windows Education N" Target="Windows Education N" Default="NO" Mode="" Description="Requires Windows Pro N" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
+  <Config Name="Windows Enterprise N" Target="Windows Enterprise N" Default="NO" Mode="" Description="Requires Windows Pro N" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
+  <TailscaleStateDir/>
+</Container>
