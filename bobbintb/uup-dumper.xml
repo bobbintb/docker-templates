@@ -32,7 +32,7 @@ Windows Pro N&#xD;
   <TemplateURL>https://raw.githubusercontent.com/bobbintb/docker-templates/master/bobbintb/uup-dumper.xml</TemplateURL>
   <Icon>https://static.wikia.nocookie.net/logopedia/images/d/dd/Uupdump.svg</Icon>
   <ExtraParams/>
-  <PostArgs>sleep infinity</PostArgs>
+  <PostArgs/>
   <CPUset/>
   <DateInstalled>1737133381</DateInstalled>
   <DonateText/>
