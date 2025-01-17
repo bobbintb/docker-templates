@@ -9,34 +9,52 @@
   <Privileged>false</Privileged>
   <Support>https://hub.docker.com/r/bobbintb/uup-dumper/</Support>
   <Project/>
-  <Overview>https://hub.docker.com/r/bobbintb/uup-dumper/</Overview>
-  <Category/>
+  <Overview>uup-dumper automates the process of creating a Windows 11 ISO. It does this using the API from uupdump.net. There are 4 base editions of Windows 11. Additional editions require their respective base editions as listed below. Set the variable for the editions you want available for install on your ISO. If a required base edition is not set to YES, it will automatically be included in the image anyway, despite how it is reflected in the form. Set your options and start the container. The ISO will be built and placed in the output folder. The container will shutdown once it is complete.&#xD;
+&#xD;
+Windows Home&#xD;
+        Windows Home Single Language&#xD;
+Windows Home N&#xD;
+Windows Pro&#xD;
+        Windows Pro for Workstations&#xD;
+        Windows Pro Education&#xD;
+        Windows Education&#xD;
+        Windows Enterprise&#xD;
+        Windows Enterprise multi-session / Virtual Desktops&#xD;
+        Windows IoT Enterprise&#xD;
+        Windows IoT Enterprise Subscription&#xD;
+Windows Pro N&#xD;
+        Windows Pro N for Workstations&#xD;
+        Windows Pro Education N&#xD;
+        Windows Education N&#xD;
+        Windows Enterprise N</Overview>
+  <Category>Other:</Category>
   <WebUI>https://uupdump.net/</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/bobbintb/docker-templates/master/bobbintb/uup-dumper.xml</TemplateURL>
   <Icon>https://static.wikia.nocookie.net/logopedia/images/d/dd/Uupdump.svg</Icon>
   <ExtraParams/>
   <PostArgs>sleep infinity</PostArgs>
   <CPUset/>
-  <DateInstalled>1737012293</DateInstalled>
+  <DateInstalled>1737133381</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="out" Target="/out" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/uup-dumper</Config>
-  <Config Name="Windows Home" Target="Windows Home" Default="YES" Mode="" Description="Required for Windows Home Single Language" Type="Variable" Display="always-hide" Required="false" Mask="false">YES</Config>
-  <Config Name="Windows Home N" Target="Windows Home N" Default="YES" Mode="" Description="" Type="Variable" Display="always-hide" Required="false" Mask="false">YES</Config>
-  <Config Name="Windows Pro" Target="Windows Pro" Default="YES" Mode="" Description="Required for:&#13;&#10;Windows Pro for Workstations,&#13;&#10;Windows Pro Education,&#13;&#10;Windows Education,&#13;&#10;Windows Enterprise,&#13;&#10;Windows Enterprise multi-session / Virtual Desktops,&#13;&#10;Windows IoT Enterprise,&#13;&#10;Windows IoT Enterprise Subscription" Type="Variable" Display="always-hide" Required="false" Mask="false">YES</Config>
-  <Config Name="Windows Pro N" Target="Windows Pro N" Default="YES" Mode="" Description="Required for: Windows Pro N for Workstations,&#13;&#10;Windows Pro Education N,&#13;&#10;Windows Education N,&#13;&#10;Windows Enterprise N" Type="Variable" Display="always-hide" Required="false" Mask="false">YES</Config>
-  <Config Name="Windows Home Single Language" Target="Windows Home Single Language" Default="NO" Mode="" Description="Requires Windows Home" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
-  <Config Name="Windows Pro for Workstations" Target="Windows Pro for Workstations" Default="NO" Mode="" Description="Requires Windows Pro" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
-  <Config Name="Windows Pro Education" Target="Windows Pro Education" Default="NO" Mode="" Description="Requires Windows Pro" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
-  <Config Name="Windows Education" Target="Windows Education" Default="NO" Mode="" Description="Requires Windows Pro" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
-  <Config Name="Windows Enterprise" Target="Windows Enterprise" Default="NO" Mode="" Description="Requires Windows Pro" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
-  <Config Name="Windows Enterprise multi-session / Virtual Desktops" Target="Windows Enterprise multi-session / Virtual Desktops" Default="NO" Mode="" Description="Requires Windows Pro" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
-  <Config Name="Windows IoT Enterprise" Target="Windows IoT Enterprise" Default="NO" Mode="" Description="Requires Windows Pro" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
-  <Config Name="Windows IoT Enterprise Subscription" Target="Windows IoT Enterprise Subscription" Default="NO" Mode="" Description="Requires Windows Pro" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
-  <Config Name="Windows Pro N for Workstations" Target="Windows Pro N for Workstations" Default="NO" Mode="" Description="Requires Windows Pro N" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
-  <Config Name="Windows Pro Education N" Target="Windows Pro Education N" Default="NO" Mode="" Description="Requires Windows Pro N" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
-  <Config Name="Windows Education N" Target="Windows Education N" Default="NO" Mode="" Description="Requires Windows Pro N" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
-  <Config Name="Windows Enterprise N" Target="Windows Enterprise N" Default="NO" Mode="" Description="Requires Windows Pro N" Type="Variable" Display="advanced-hide" Required="false" Mask="false">NO</Config>
+  <Config Name="Output folder" Target="/out" Default="" Mode="rw" Description="Output directory for the ISO" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/uup-dumper</Config>
+  <Config Name="Build ISO when container starts" Target="BUILD" Default="YES" Mode="" Description="Builds ISO when container starts. Set to NO if you are just changing settings or don't want to build." Type="Variable" Display="always" Required="false" Mask="false">YES</Config>
+  <Config Name="Windows Home" Target="HOME" Default="YES" Mode="" Description="Required for Windows Home Single Language" Type="Variable" Display="always-hide" Required="false" Mask="false">YES</Config>
+  <Config Name="Windows Home N" Target="HOMEN" Default="YES" Mode="" Description="" Type="Variable" Display="always-hide" Required="false" Mask="false">YES</Config>
+  <Config Name="Windows Pro" Target="PRO" Default="YES" Mode="" Description="Required for:&#13;&#10;Windows Pro for Workstations,&#13;&#10;Windows Pro Education,&#13;&#10;Windows Education,&#13;&#10;Windows Enterprise,&#13;&#10;Windows Enterprise multi-session / Virtual Desktops,&#13;&#10;Windows IoT Enterprise,&#13;&#10;Windows IoT Enterprise Subscription" Type="Variable" Display="always-hide" Required="false" Mask="false">YES</Config>
+  <Config Name="Windows Pro N" Target="PRON" Default="YES" Mode="" Description="Required for: Windows Pro N for Workstations,&#13;&#10;Windows Pro Education N,&#13;&#10;Windows Education N,&#13;&#10;Windows Enterprise N" Type="Variable" Display="always-hide" Required="false" Mask="false">YES</Config>
+  <Config Name="Windows Home Single Language" Target="HOMESINGLE" Default="NO" Mode="" Description="Requires Windows Home" Type="Variable" Display="advanced-hide" Required="false" Mask="false">YES</Config>
+  <Config Name="Windows Pro for Workstations" Target="PROFORWORK" Default="NO" Mode="" Description="Requires Windows Pro" Type="Variable" Display="advanced-hide" Required="false" Mask="false">YES</Config>
+  <Config Name="Windows Pro Education" Target="PROEDU" Default="NO" Mode="" Description="Requires Windows Pro" Type="Variable" Display="advanced-hide" Required="false" Mask="false">YES</Config>
+  <Config Name="Windows Education" Target="EDU" Default="NO" Mode="" Description="Requires Windows Pro" Type="Variable" Display="advanced-hide" Required="false" Mask="false">YES</Config>
+  <Config Name="Windows Enterprise" Target="ENT" Default="NO" Mode="" Description="Requires Windows Pro" Type="Variable" Display="advanced-hide" Required="false" Mask="false">YES</Config>
+  <Config Name="Windows Enterprise multi-session / Virtual Desktops" Target="ENTMS" Default="NO" Mode="" Description="Requires Windows Pro" Type="Variable" Display="advanced-hide" Required="false" Mask="false">YES</Config>
+  <Config Name="Windows IoT Enterprise" Target="IOTENT" Default="NO" Mode="" Description="Requires Windows Pro" Type="Variable" Display="advanced-hide" Required="false" Mask="false">YES</Config>
+  <Config Name="Windows IoT Enterprise Subscription" Target="IOTENTSUB" Default="NO" Mode="" Description="Requires Windows Pro" Type="Variable" Display="advanced-hide" Required="false" Mask="false">YES</Config>
+  <Config Name="Windows Pro N for Workstations" Target="PRONFORWORK" Default="NO" Mode="" Description="Requires Windows Pro N" Type="Variable" Display="advanced-hide" Required="false" Mask="false">YES</Config>
+  <Config Name="Windows Pro Education N" Target="PROEDUN" Default="NO" Mode="" Description="Requires Windows Pro N" Type="Variable" Display="advanced-hide" Required="false" Mask="false">YES</Config>
+  <Config Name="Windows Education N" Target="EDUN" Default="NO" Mode="" Description="Requires Windows Pro N" Type="Variable" Display="advanced-hide" Required="false" Mask="false">YES</Config>
+  <Config Name="Windows Enterprise N" Target="ENTN" Default="NO" Mode="" Description="Requires Windows Pro N" Type="Variable" Display="advanced-hide" Required="false" Mask="false">YES</Config>
   <TailscaleStateDir/>
 </Container>
