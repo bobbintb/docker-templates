@@ -7,8 +7,8 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/bobbintb/uup-dumper/</Support>
-  <Project/>
+  <Support>https://forums.unraid.net/topic/185305-support-bobbintb-uup-dumper/</Support>
+  <Project>https://uupdump.net/</Project>
   <Overview>uup-dumper automates the process of creating a Windows 11 ISO. It does this using the API from uupdump.net. There are 4 base editions of Windows 11. Additional editions require their respective base editions as listed below. Set the variable for the editions you want available for install on your ISO. If a required base edition is not set to YES, it will automatically be included in the image anyway, despite how it is reflected in the form. Set your options and start the container. The ISO will be built and placed in the output folder. The container will shutdown once it is complete.&#xD;
 &#xD;
 Windows Home&#xD;
