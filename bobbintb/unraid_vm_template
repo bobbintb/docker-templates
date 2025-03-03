@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<PluginURL>https://raw.githubusercontent.com/bobbintb/unraid_vm_template/refs/heads/main/bobbintb.system.unraidvm.plg</PluginURL>
+<PluginAuthor>bobbintb</PluginAuthor>
+<Beta>True</Beta>
+<Category>Other:</Category>
+<Name>Unraid VM template</Name>
+<Description>
+This plugin adds a template to the `Add VM page` for creating an Unraid VM. In BETA, use with caution.
+</Description>
+<Support>http://lime-technology.com/forum/index.php?topic=40111.0</Support>
+<Icon>/usr/local/emhttp/plugins/dynamix.vm.manager/templates/images/unraid.png</Icon>
+<IconFA>fa-code-fork</IconFA>
+</Containers>
