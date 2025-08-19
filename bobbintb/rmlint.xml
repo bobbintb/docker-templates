@@ -20,9 +20,7 @@
   <DateInstalled>1613288151</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>rmlint finds space waste and other broken things on your filesystem and offers to remove it.[br][br]&#xD;
-&#xD;
-Default username/password is abc/abc[br][br]</Description>
+  <Description>rmlint finds space waste and other broken things on your filesystem and offers to remove it.</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
