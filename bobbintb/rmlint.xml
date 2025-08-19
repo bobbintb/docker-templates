@@ -36,7 +36,7 @@ Default username/password is abc/abc[br][br]</Description>
   <Data>
     <Volume>
       <HostDir></HostDir>
-      <ContainerDir>/root</ContainerDir>
+      <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
@@ -59,7 +59,7 @@ Default username/password is abc/abc[br][br]</Description>
   </Environment>
   <Labels/>
   <Config Name="GUI Port" Target="8322" Default="" Mode="tcp" Description="GUI Port - Default 8322" Type="Port" Display="always" Required="true" Mask="false">8322</Config>
-  <Config Name="Search location" Target="/root" Default="" Mode="rw" Description="Search location /root" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Search location" Target="/data" Default="" Mode="rw" Description="Search location /data" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
   <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
   <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
