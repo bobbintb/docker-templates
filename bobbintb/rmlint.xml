@@ -11,13 +11,12 @@
   <Project>https://github.com/sahib/rmlint</Project>
   <Overview>rmlint finds space waste and other broken things on your filesystem and offers to remove it.</Overview>
   <Category>Tools: Status:Stable</Category>
-  <WebUI>http://[IP]:[PORT:8322]</WebUI>
+  <WebUI>https://[IP]:[PORT:8322]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/bobbintb/docker-templates/main/bobbintb/rmlint.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/bobbintb/docker-rmlint-unraid/master/rmlint-icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1613288151</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>rmlint finds space waste and other broken things on your filesystem and offers to remove it.</Description>
