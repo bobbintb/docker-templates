@@ -13,7 +13,7 @@
 &#xD;
 Default username/password is abc/abc[br][br]</Overview>
   <Category>Tools: Status:Stable</Category>
-  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <WebUI>http://[IP]:[PORT:8322]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/bobbintb/docker-templates/main/bobbintb/rmlint.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/bobbintb/docker-rmlint-unraid/master/rmlint-icon.png</Icon>
   <ExtraParams/>
@@ -30,7 +30,7 @@ Default username/password is abc/abc[br][br]</Description>
     <Publish>
       <Port>
         <HostPort>8322</HostPort>
-        <ContainerPort>8080</ContainerPort>
+        <ContainerPort>8322</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
@@ -49,16 +49,6 @@ Default username/password is abc/abc[br][br]</Description>
   </Data>
   <Environment>
     <Variable>
-      <Value/>
-      <Name>GUAC_USER</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>GUAC_PASS</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
       <Value>99</Value>
       <Name>PUID</Name>
       <Mode/>
@@ -70,11 +60,10 @@ Default username/password is abc/abc[br][br]</Description>
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="GUI Port" Target="8080" Default="" Mode="tcp" Description="GUI Port - Default 8080" Type="Port" Display="always" Required="true" Mask="false">8322</Config>
-  <Config Name="GUAC_USER" Target="GUAC_USER" Default="" Mode="" Description="Username for the desktop GUI." Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="GUAC_PASS" Target="GUAC_PASS" Default="" Mode="" Description="Password MD5 hash for the desktop GUI." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="GUI Port" Target="8322" Default="" Mode="tcp" Description="GUI Port - Default 8322" Type="Port" Display="always" Required="true" Mask="false">8322</Config>
   <Config Name="Search location" Target="/root" Default="" Mode="rw" Description="Search location /root" Type="Path" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="PUID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
-  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="PGID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+  <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+  <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="true" Mask="false"></Config>
 </Container>
